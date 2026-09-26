@@ -27,13 +27,13 @@ export function Team() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={`${m.name} LinkedIn profili`}
-                    className="text-muted-foreground transition-colors hover:text-primary"
+                    className="shrink-0 text-[#0A66C2] transition hover:scale-110 hover:brightness-125"
                   >
-                    <LinkedinLogo size={18} weight="fill" />
+                    <LinkedinLogo size={28} weight="fill" />
                   </a>
                 ) : (
-                  <span className="text-muted-foreground" aria-hidden>
-                    <LinkedinLogo size={18} weight="fill" />
+                  <span className="shrink-0 text-[#0A66C2]" aria-hidden>
+                    <LinkedinLogo size={28} weight="fill" />
                   </span>
                 )}
               </div>
