@@ -75,7 +75,7 @@ export const SAFETY = [
 
 
 export const TEAM = [
-  { name: "İlhan Baştürk", role: "Danışman", dept: "Manisa CBÜ Öğretim Üyesi", linkedin: "https://www.linkedin.com/in/ilhan-ba%C5%9Ft%C3%BCrk-505b2819/" },
+  { name: "Doç. Dr. İlhan Baştürk", role: "Danışman", dept: "Manisa CBÜ Öğretim Üyesi", linkedin: "https://www.linkedin.com/in/ilhan-ba%C5%9Ft%C3%BCrk-505b2819/" },
   { name: "Mehmet Burak Tarcan", role: "Takım Kaptanı", dept: "Elektrik-Elektronik Müh.", linkedin: "https://www.linkedin.com/in/mehmet-burak-tarcan-946076248/" },
   { name: "Ali Alper Tellioğlu", role: "Elektronik Donanım", dept: "Elektrik-Elektronik Müh.", linkedin: "https://www.linkedin.com/in/alialpertellioglu/" },
   { name: "Eren Özdemir", role: "Simülasyon ve Test", dept: "Elektrik-Elektronik Müh.", linkedin: "https://www.linkedin.com/in/eren-%C3%B6zdemir-00b515297/" },

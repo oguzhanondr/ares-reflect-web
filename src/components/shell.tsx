@@ -28,7 +28,6 @@ function Brand() {
       <img src={logo} alt="ARES-Reflect logosu" className="size-12 rounded-[10px] object-cover" width={48} height={48} />
       <span className="leading-none">
         <strong className="block text-[0.95rem] font-bold tracking-[0.12em] whitespace-nowrap">ARES-REFLECT</strong>
-        <span className="mt-1.5 block font-mono text-[0.55rem] tracking-[0.2em] text-[#d5e8ff]/80">TAKIM PATH / 2026</span>
       </span>
     </a>
   )
