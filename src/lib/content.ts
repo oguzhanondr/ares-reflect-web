@@ -75,13 +75,13 @@ export const SAFETY = [
 
 
 export const TEAM = [
-  { name: "İlhan Baştürk", role: "Danışman", dept: "Manisa CBÜ Öğretim Üyesi", focus: "Yöntem geliştirme, sonuç analizi, disiplinlerarası koordinasyon" },
-  { name: "Mehmet Burak Tarcan", role: "Takım Kaptanı", dept: "Elektrik-Elektronik Müh.", focus: "Simulink dijital ikiz, EKF, kaskad PID, Stateflow" },
-  { name: "Hasan Arda Yaman", role: "RF & Güç", dept: "Elektrik-Elektronik Müh.", focus: "Anten tasarımı, RF entegrasyonu, güç yönetimi" },
-  { name: "Ali Alper Tellioğlu", role: "Gömülü Sistem", dept: "Elektrik-Elektronik Müh.", focus: "ESP32 PCB, step sürücüler, 140 W güç bütçesi" },
-  { name: "Hasan Emre Kaya", role: "Mekanik", dept: "Makine Mühendisliği", focus: "SOLIDWORKS hibrit şasi, kayış-kasnak, CG analizi" },
-  { name: "Oğuzhan Önder", role: "Yazılım & Algoritma", dept: "Yapay Zeka ve Makine Öğrenmesi", focus: "IRS hüzme yönlendirme, NLoS link bütçesi, karar destek yazılımı" },
-  { name: "Eren Özdemir", role: "Simülasyon & Test", dept: "Elektrik-Elektronik Müh.", focus: "Motor kalibrasyonu, lazer doğrulama, saha testleri" },
+  { name: "İlhan Baştürk", role: "Danışman", dept: "Manisa CBÜ Öğretim Üyesi", linkedin: "https://www.linkedin.com/in/ilhan-ba%C5%9Ft%C3%BCrk-505b2819/" },
+  { name: "Mehmet Burak Tarcan", role: "Takım Kaptanı", dept: "Elektrik-Elektronik Müh.", linkedin: "https://www.linkedin.com/in/mehmet-burak-tarcan-946076248/" },
+  { name: "Ali Alper Tellioğlu", role: "Elektronik Donanım", dept: "Elektrik-Elektronik Müh.", linkedin: "https://www.linkedin.com/in/alialpertellioglu/" },
+  { name: "Eren Özdemir", role: "Simülasyon ve Test", dept: "Elektrik-Elektronik Müh.", linkedin: "https://www.linkedin.com/in/eren-%C3%B6zdemir-00b515297/" },
+  { name: "Hasan Arda Yaman", role: "Güç Sistemleri", dept: "Elektrik-Elektronik Müh." },
+  { name: "Hasan Emre Kaya", role: "Mekanik Tasarım", dept: "Makine Mühendisliği", linkedin: "https://www.linkedin.com/in/hasanemrekaya/" },
+  { name: "Oğuzhan Önder", role: "Arayüz ve Yazılım", dept: "Yapay Zeka ve Makine Öğrenmesi", linkedin: "https://www.linkedin.com/in/o%C4%9Fuzhan%C3%B6nderr/" },
 ]
 
 export const REFERENCES = [

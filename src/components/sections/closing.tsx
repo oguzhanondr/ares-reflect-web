@@ -1,3 +1,4 @@
+import { LinkedinLogo } from "@phosphor-icons/react"
 import logo from "@/assets/ares-reflect-logo.png"
 import { Reveal, Section } from "@/components/section"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
@@ -8,8 +9,8 @@ export function Team() {
   return (
     <Section
       id="takim"
-      code="05 / Takım PATH"
-      title="Altı öğrenci, üç bölüm"
+      code="05 / PATH · TEKNOFEST"
+      title="Takım tanıtımı"
       description="Elektrik-elektronik, makine ve yapay zekâ mühendisliği öğrencilerinden oluşan takım, Manisa Celal Bayar Üniversitesi öğretim üyesi danışmanlığında çalışıyor."
     >
       <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
@@ -18,8 +19,24 @@ export function Team() {
             <article className={cn("h-full border bg-card p-5", i === 0 ? "border-primary/50" : "border-border")}>
               <p className="font-mono text-[0.55rem] tracking-[0.2em] text-primary uppercase">{m.role}</p>
               <h3 className="mt-2 text-[0.9rem] font-bold tracking-[0.06em] uppercase">{m.name}</h3>
-              <p className="mt-3 text-[0.8rem] leading-relaxed text-muted-foreground">{m.focus}</p>
-              <p className="mt-3 border-t border-border pt-3 font-mono text-[0.6rem] text-muted-foreground">{m.dept}</p>
+              <div className="mt-4 flex items-center justify-between gap-3 border-t border-border pt-3">
+                <p className="font-mono text-[0.6rem] text-muted-foreground">{m.dept}</p>
+                {m.linkedin ? (
+                  <a
+                    href={m.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${m.name} LinkedIn profili`}
+                    className="text-muted-foreground transition-colors hover:text-primary"
+                  >
+                    <LinkedinLogo size={18} weight="fill" />
+                  </a>
+                ) : (
+                  <span className="text-muted-foreground" aria-hidden>
+                    <LinkedinLogo size={18} weight="fill" />
+                  </span>
+                )}
+              </div>
             </article>
           </Reveal>
         ))}
