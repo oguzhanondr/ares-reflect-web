@@ -79,7 +79,7 @@ export const TEAM = [
   { name: "Mehmet Burak Tarcan", role: "Takım Kaptanı", dept: "Elektrik-Elektronik Müh.", linkedin: "https://www.linkedin.com/in/mehmet-burak-tarcan-946076248/" },
   { name: "Ali Alper Tellioğlu", role: "Elektronik Donanım", dept: "Elektrik-Elektronik Müh.", linkedin: "https://www.linkedin.com/in/alialpertellioglu/" },
   { name: "Eren Özdemir", role: "Simülasyon ve Test", dept: "Elektrik-Elektronik Müh.", linkedin: "https://www.linkedin.com/in/eren-%C3%B6zdemir-00b515297/" },
-  { name: "Hasan Arda Yaman", role: "Güç Sistemleri", dept: "Elektrik-Elektronik Müh." },
+  { name: "Hasan Arda Yaman", role: "Güç Sistemleri", dept: "Elektrik-Elektronik Müh.", linkedin: "https://www.linkedin.com/" },
   { name: "Hasan Emre Kaya", role: "Mekanik Tasarım", dept: "Makine Mühendisliği", linkedin: "https://www.linkedin.com/in/hasanemrekaya/" },
   { name: "Oğuzhan Önder", role: "Arayüz ve Yazılım", dept: "Yapay Zeka ve Makine Öğrenmesi", linkedin: "https://www.linkedin.com/in/o%C4%9Fuzhan%C3%B6nderr/" },
 ]
