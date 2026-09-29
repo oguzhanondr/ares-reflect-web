@@ -1,4 +1,4 @@
-import terminalConcept from "@/assets/terminal-concept.webp"
+import terminalPrototype from "@/assets/terminal-prototype.png"
 import { Corners, DataCell, Reveal, Section, SubHeading } from "@/components/section"
 import { HARDWARE, SAFETY } from "@/lib/content"
 
@@ -21,15 +21,15 @@ export function Hardware() {
         <Reveal>
           <figure className="relative flex h-full flex-col border border-border bg-panel p-3">
             <img
-              src={terminalConcept}
-              alt="ARES-Reflect terminalinin konsept modeli: kaide, U-kol ve parabolik anten"
+              src={terminalPrototype}
+              alt="Beyaz fonda ARES-Reflect terminal prototipi: açık elektronik gövde, hareket mekanizması ve parabolik anten"
               width={900}
               height={900}
               loading="lazy"
               className="block h-auto w-full"
             />
             <figcaption className="mt-3">
-              <p className="font-mono text-[0.6rem] tracking-[0.2em] text-primary uppercase">Konsept model</p>
+              <p className="font-mono text-[0.6rem] tracking-[0.2em] text-primary uppercase">Terminal prototipi</p>
               <p className="mt-1 font-mono text-[0.65rem] text-muted-foreground">40 cm parabolik anten · S-band 2 GHz</p>
             </figcaption>
             <Corners />

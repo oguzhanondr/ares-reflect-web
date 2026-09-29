@@ -61,11 +61,28 @@ function NavList({ active, onNavigate }: { active: string; onNavigate?: () => vo
 export function Shell({ children }: { children: ReactNode }) {
   const active = useActiveSection()
   const [open, setOpen] = useState(false)
+  const embedded = typeof window !== "undefined" && window.self !== window.top
+
+  useEffect(() => {
+    if (!embedded) return
+
+    const parentRoot = window.parent.document.documentElement
+    const syncTheme = () => {
+      const light = parentRoot.classList.contains("light")
+      document.documentElement.classList.toggle("light", light)
+      document.documentElement.classList.toggle("dark", !light)
+    }
+
+    syncTheme()
+    const observer = new MutationObserver(syncTheme)
+    observer.observe(parentRoot, { attributes: true, attributeFilter: ["class"] })
+    return () => observer.disconnect()
+  }, [embedded])
 
   return (
     <>
       {/* left rail — desktop */}
-      <aside className="fixed inset-y-0 left-0 z-40 hidden w-[230px] flex-col border-r border-border bg-gradient-to-b from-[#171f2b] via-[#111923] to-[#0b1119] lg:flex">
+      {!embedded && <aside className="fixed inset-y-0 left-0 z-40 hidden w-[230px] flex-col border-r border-border bg-gradient-to-b from-[#171f2b] via-[#111923] to-[#0b1119] lg:flex">
         <div className="border-b border-white/10 p-4">
           <Brand />
         </div>
@@ -77,11 +94,11 @@ export function Shell({ children }: { children: ReactNode }) {
             <p className="font-mono text-[0.55rem] tracking-[0.14em] text-[#c4daf4]/80">HAREKETLİ UYDU TERMİNALİ</p>
           </div>
         </div>
-      </aside>
+      </aside>}
 
-      <div className="lg:pl-[230px]">
+      <div className={embedded ? "" : "lg:pl-[230px]"}>
         {/* top strip */}
-        <header className="sticky top-0 z-30 flex h-14 items-stretch border-b border-border bg-panel/95 backdrop-blur lg:h-11">
+        {!embedded && <header className="sticky top-0 z-30 flex h-14 items-stretch border-b border-border bg-panel/95 backdrop-blur lg:h-11">
           <div className="flex items-center px-4 lg:hidden">
             <Brand />
           </div>
@@ -101,9 +118,9 @@ export function Shell({ children }: { children: ReactNode }) {
           >
             {open ? <X className="size-5" /> : <List className="size-5" />}
           </button>
-        </header>
+        </header>}
 
-        {open && (
+        {!embedded && open && (
           <div className="fixed inset-x-0 top-14 z-30 border-b border-border bg-gradient-to-b from-[#171f2b] to-[#0b1119] lg:hidden">
             <NavList active={active} onNavigate={() => setOpen(false)} />
           </div>

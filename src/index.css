@@ -104,6 +104,38 @@
     --radius: 0.125rem;
 }
 
+:root.light {
+    color-scheme: light;
+    --background: #f4f8fd;
+    --panel: #ffffff;
+    --foreground: #06285d;
+    --card: #edf4fb;
+    --card-foreground: #06285d;
+    --popover: #ffffff;
+    --popover-foreground: #06285d;
+    --primary: #0050a4;
+    --primary-foreground: #ffffff;
+    --secondary: #e4eef9;
+    --secondary-foreground: #06285d;
+    --muted: #e8f0f8;
+    --muted-foreground: #48688f;
+    --accent: #dbe9f7;
+    --accent-foreground: #06285d;
+    --border: #b9cde3;
+    --line2: #8eadd0;
+    --input: #a9c0dc;
+    --ring: #0050a4;
+    --signal: #0067c5;
+}
+
+:root.light body {
+    background:
+      radial-gradient(ellipse at 55% 35%, transparent 58%, rgba(0, 63, 145, 0.08)) fixed,
+      linear-gradient(rgba(0, 63, 145, 0.055) 1px, transparent 1px) 0 0 / 32px 32px,
+      linear-gradient(90deg, rgba(0, 63, 145, 0.055) 1px, transparent 1px) 0 0 / 32px 32px,
+      var(--background);
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

@@ -62,7 +62,6 @@ export function Footer() {
             <img src={logo} alt="" className="size-11 rounded-[9px] object-cover" width={44} height={44} />
             <div>
               <p className="text-base font-bold tracking-[0.14em]">ARES-REFLECT</p>
-              <p className="mt-1 font-mono text-[0.55rem] tracking-[0.2em] text-muted-foreground">TAKIM PATH / TEKNOFEST 2026</p>
             </div>
           </div>
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted-foreground">
@@ -95,7 +94,7 @@ export function Footer() {
         </Accordion>
       </div>
       <div className="mx-auto mt-10 flex max-w-6xl flex-wrap justify-between gap-3 border-t border-border pt-5 font-mono text-[0.65rem] tracking-[0.1em] text-muted-foreground uppercase">
-        <span>© 2026 Takım PATH · ARES-Reflect</span>
+        <span>© PATH · ARES-Reflect · TEKNOFEST 2026</span>
         <a href="#genel" className="hover:text-primary">
           Başa dön ↑
         </a>
