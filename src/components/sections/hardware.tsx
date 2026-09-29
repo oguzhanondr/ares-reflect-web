@@ -22,9 +22,9 @@ export function Hardware() {
           <figure className="relative flex h-full flex-col border border-border bg-panel p-3">
             <img
               src={terminalPrototype}
-              alt="Beyaz fonda ARES-Reflect terminal prototipi: açık elektronik gövde, hareket mekanizması ve parabolik anten"
-              width={900}
-              height={900}
+              alt="Beyaz fonda ARES-Reflect terminal prototipi: alüminyum muhafaza, hareket mekanizması ve parabolik anten"
+              width={1086}
+              height={1448}
               loading="lazy"
               className="block h-auto w-full"
             />
