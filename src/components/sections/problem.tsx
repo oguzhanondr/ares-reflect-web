@@ -75,7 +75,7 @@ export function Problem() {
               <div className="mt-6 grid grid-cols-3 border border-border text-center">
                 <div className="border-r border-border p-3">
                   <p className="label-mono text-[0.55rem] text-muted-foreground">Eşik</p>
-                  <p className="mt-1 font-mono text-sm">−118 dBm</p>
+                  <p className="mt-1 font-mono text-sm">−110 dBm</p>
                 </div>
                 <div className="border-r border-border p-3">
                   <p className="label-mono text-[0.55rem] text-muted-foreground">IRS kazancı</p>
@@ -87,7 +87,7 @@ export function Problem() {
                 </div>
               </div>
               <p className="mt-4 text-xs leading-relaxed text-muted-foreground">
-                Beyaz çizgi −118 dBm haberleşme eşiğidir. Uplink'teki açık, 3GPP NTN tekrarlama protokolü ve IRS'in
+                Beyaz çizgi −110 dBm haberleşme eşiğidir. Uplink'teki açık, 3GPP NTN tekrarlama protokolü ve IRS'in
                 karşılıklılık gereği uplink'te de sağladığı pasif kazançla kapatılır.
               </p>
             </div>

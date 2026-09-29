@@ -19,7 +19,7 @@ export const HERO_STATS = [
 
 export const LINK = {
   blocked: -122,
-  threshold: -118,
+  threshold: -110,
   withIrs: -114.5,
   gain: 7.5,
   min: -130,
