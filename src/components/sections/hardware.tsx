@@ -3,8 +3,8 @@ import { Corners, DataCell, Reveal, Section, SubHeading } from "@/components/sec
 import { HARDWARE, SAFETY } from "@/lib/content"
 
 const FIGURES = [
-  { label: "Toplam ağırlık", value: "9,43 kg", note: "Sınır 20 kg" },
-  { label: "Nominal güç", value: "~51 W", note: "Uydu takibinde" },
+  { label: "Toplam ağırlık", value: "~15 kg", note: "Sınır 20 kg" },
+  { label: "Nominal güç", value: "~100 W", note: "Uydu takibinde" },
   { label: "Tepe güç", value: "~124 W", note: "±8° sarsıntıda · sınır 140 W" },
   { label: "Efektif tork", value: "6,0 Nm", note: "3:1 kayış-kasnak aktarımı" },
 ]

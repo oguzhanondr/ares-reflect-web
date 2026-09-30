@@ -11,8 +11,8 @@ export const NAV = [
 ]
 
 export const HERO_STATS = [
-  { value: 9.43, decimals: 2, unit: "kg", label: "Toplam ağırlık", note: "Sınır 20 kg" },
-  { value: 51, decimals: 0, unit: "W", label: "Nominal güç", note: "Tepe ~124 W · Sınır 140 W", prefix: "~" },
+  { value: 15, decimals: 0, unit: "kg", label: "Toplam ağırlık", note: "Sınır 20 kg", prefix: "~" },
+  { value: 100, decimals: 0, unit: "W", label: "Nominal güç", note: "Tepe ~124 W · Sınır 140 W", prefix: "~" },
   { value: 8, decimals: 0, unit: "°", label: "Bozucu bastırma", note: "10 sn periyot, Roll/Pitch", prefix: "±" },
   { value: 7.5, decimals: 1, unit: "dB", label: "IRS kazancı", note: "−122 → −114,5 dBm", prefix: "+" },
 ]
