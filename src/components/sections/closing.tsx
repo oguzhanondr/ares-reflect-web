@@ -1,4 +1,4 @@
-import { LinkedinLogo } from "@phosphor-icons/react"
+import { FilePdf, LinkedinLogo } from "@phosphor-icons/react"
 import logo from "@/assets/ares-reflect-logo.png"
 import { Reveal, Section } from "@/components/section"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
@@ -21,21 +21,35 @@ export function Team() {
               <h3 className="mt-2 text-[0.9rem] font-bold tracking-[0.06em] uppercase">{m.name}</h3>
               <div className="mt-4 flex items-center justify-between gap-3 border-t border-border pt-3">
                 <p className="font-mono text-[0.6rem] text-muted-foreground">{m.dept}</p>
-                {m.linkedin ? (
-                  <a
-                    href={m.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={`${m.name} LinkedIn profili`}
-                    className="shrink-0 text-[#0A66C2] transition hover:scale-110 hover:brightness-125"
-                  >
-                    <LinkedinLogo size={28} weight="fill" />
-                  </a>
-                ) : (
-                  <span className="shrink-0 text-[#0A66C2]" aria-hidden>
-                    <LinkedinLogo size={28} weight="fill" />
-                  </span>
-                )}
+                <div className="flex shrink-0 items-center gap-2">
+                  {m.cv && (
+                    <a
+                      href={m.cv}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${m.name} CV (PDF)`}
+                      className="flex h-7 items-center gap-1 border border-border px-2 font-mono text-[0.6rem] tracking-[0.15em] text-muted-foreground uppercase transition hover:border-primary hover:text-primary"
+                    >
+                      <FilePdf size={16} weight="fill" />
+                      CV
+                    </a>
+                  )}
+                  {m.linkedin ? (
+                    <a
+                      href={m.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${m.name} LinkedIn profili`}
+                      className="shrink-0 text-[#0A66C2] transition hover:scale-110 hover:brightness-125"
+                    >
+                      <LinkedinLogo size={28} weight="fill" />
+                    </a>
+                  ) : (
+                    <span className="shrink-0 text-[#0A66C2]" aria-hidden>
+                      <LinkedinLogo size={28} weight="fill" />
+                    </span>
+                  )}
+                </div>
               </div>
             </article>
           </Reveal>
