@@ -1,5 +1,5 @@
 import { useEffect, useState, type ReactNode } from "react"
-import { ArrowSquareOut, List, PresentationChart, X } from "@phosphor-icons/react"
+import { ArrowDown, List, PresentationChart, X } from "@phosphor-icons/react"
 
 import logo from "@/assets/ares-reflect-logo.png"
 import { NAV } from "@/lib/content"
@@ -55,9 +55,7 @@ function NavList({ active, onNavigate }: { active: string; onNavigate?: () => vo
         </a>
       ))}
       <a
-        href="/cv/ares-reflect-sunum.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
+        href="#sunum"
         onClick={onNavigate}
         className="group mx-3 mt-4 flex items-center gap-3 border border-primary/60 bg-primary/10 px-3 py-2.5 text-white transition-colors hover:border-primary hover:bg-primary/20"
       >
@@ -66,7 +64,7 @@ function NavList({ active, onNavigate }: { active: string; onNavigate?: () => vo
           <span className="block text-[0.95rem] font-semibold tracking-[0.1em] uppercase">Sunum</span>
           <span className="block font-mono text-[0.55rem] tracking-[0.08em] text-[#c4daf4]/80">Sunuma erişmek için tıklayın</span>
         </span>
-        <ArrowSquareOut size={14} className="ml-auto shrink-0 text-[#c4daf4]/70 group-hover:text-white" />
+        <ArrowDown size={14} className="ml-auto shrink-0 text-[#c4daf4]/70 group-hover:text-white" />
       </a>
     </nav>
   )
