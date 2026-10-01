@@ -11,7 +11,7 @@ export function Team() {
       id="takim"
       code="05 / PATH · TEKNOFEST"
       title="Takım tanıtımı"
-      description="Elektrik-elektronik, makine ve yapay zekâ mühendisliği öğrencilerinden oluşan takım, Manisa Celal Bayar Üniversitesi öğretim üyesi danışmanlığında çalışıyor."
+      description="Elektrik-elektronik, makine ve yapay zekâ mühendisliği öğrencilerinden oluşan takım, Manisa Celal Bayar Üniversitesi öğretim üyesi danışmanlığında çalışıyor. Takım üyelerinin CV'leri ve LinkedIn bağlantıları aşağıda yer alıyor."
     >
       <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
         {TEAM.map((m, i) => (
@@ -28,7 +28,7 @@ export function Team() {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={`${m.name} CV (PDF)`}
-                      className="flex h-7 items-center gap-1 border border-border px-2 font-mono text-[0.6rem] tracking-[0.15em] text-muted-foreground uppercase transition hover:border-primary hover:text-primary"
+                      className="flex h-7 items-center gap-1 rounded-[4px] bg-[#D93025] px-2.5 font-mono text-[0.65rem] font-bold tracking-[0.15em] text-white uppercase shadow-sm transition hover:scale-105 hover:bg-[#B3261E]"
                     >
                       <FilePdf size={16} weight="fill" />
                       CV
