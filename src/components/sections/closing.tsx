@@ -17,8 +17,20 @@ export function Team() {
         {TEAM.map((m, i) => (
           <Reveal key={m.name} delay={i * 0.04}>
             <article className={cn("h-full border bg-card p-5", i === 0 ? "border-primary/50" : "border-border")}>
-              <p className="font-mono text-[0.55rem] tracking-[0.2em] text-primary uppercase">{m.role}</p>
-              <h3 className="mt-2 text-[0.9rem] font-bold tracking-[0.06em] uppercase">{m.name}</h3>
+              <div className="flex items-center gap-4">
+                <img
+                  src={m.photo}
+                  alt={m.name}
+                  loading="lazy"
+                  width={64}
+                  height={64}
+                  className={cn("size-16 shrink-0 rounded-full border-2 object-cover", i === 0 ? "border-primary" : "border-border")}
+                />
+                <div>
+                  <p className="font-mono text-[0.55rem] tracking-[0.2em] text-primary uppercase">{m.role}</p>
+                  <h3 className="mt-2 text-[0.9rem] font-bold tracking-[0.06em] uppercase">{m.name}</h3>
+                </div>
+              </div>
               <div className="mt-4 flex items-center justify-between gap-3 border-t border-border pt-3">
                 <p className="font-mono text-[0.6rem] text-muted-foreground">{m.dept}</p>
                 <div className="flex shrink-0 items-center gap-2">

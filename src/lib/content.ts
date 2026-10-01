@@ -74,13 +74,13 @@ export const SAFETY = [
 
 
 export const TEAM = [
-  { name: "Doç. Dr. İlhan Baştürk", role: "Danışman", dept: "Manisa CBÜ Öğretim Üyesi", linkedin: "https://www.linkedin.com/in/ilhan-ba%C5%9Ft%C3%BCrk-505b2819/" },
-  { name: "Mehmet Burak Tarcan", role: "Takım Kaptanı", dept: "Elektrik-Elektronik Müh.", linkedin: "https://www.linkedin.com/in/mehmet-burak-tarcan-946076248/", cv: "/cv/mehmet-burak-tarcan.pdf" },
-  { name: "Ali Alper Tellioğlu", role: "Elektronik Donanım", dept: "Elektrik-Elektronik Müh.", linkedin: "https://www.linkedin.com/in/alialpertellioglu/", cv: "/cv/ali-alper-tellioglu.pdf" },
-  { name: "Eren Özdemir", role: "Simülasyon ve Test", dept: "Elektrik-Elektronik Müh.", linkedin: "https://www.linkedin.com/in/eren-%C3%B6zdemir-00b515297/", cv: "/cv/eren-ozdemir.pdf" },
-  { name: "Hasan Arda Yaman", role: "Güç Sistemleri", dept: "Elektrik-Elektronik Müh.", linkedin: "https://www.linkedin.com/" },
-  { name: "Hasan Emre Kaya", role: "Mekanik Tasarım", dept: "Makine Mühendisliği", linkedin: "https://www.linkedin.com/in/hasanemrekaya/", cv: "/cv/hasan-emre-kaya.pdf" },
-  { name: "Oğuzhan Önder", role: "Arayüz ve Yazılım", dept: "Yapay Zeka ve Makine Öğrenmesi", linkedin: "https://www.linkedin.com/in/o%C4%9Fuzhan%C3%B6nderr/", cv: "/cv/oguzhan-onder.pdf" },
+  { name: "Doç. Dr. İlhan Baştürk", photo: "/team/ilhan-basturk.webp", role: "Danışman", dept: "Manisa CBÜ Öğretim Üyesi", linkedin: "https://www.linkedin.com/in/ilhan-ba%C5%9Ft%C3%BCrk-505b2819/" },
+  { name: "Mehmet Burak Tarcan", photo: "/team/mehmet-burak-tarcan.webp", role: "Takım Kaptanı", dept: "Elektrik-Elektronik Müh.", linkedin: "https://www.linkedin.com/in/mehmet-burak-tarcan-946076248/", cv: "/cv/mehmet-burak-tarcan.pdf" },
+  { name: "Ali Alper Tellioğlu", photo: "/team/ali-alper-tellioglu.webp", role: "Elektronik Donanım", dept: "Elektrik-Elektronik Müh.", linkedin: "https://www.linkedin.com/in/alialpertellioglu/", cv: "/cv/ali-alper-tellioglu.pdf" },
+  { name: "Eren Özdemir", photo: "/team/eren-ozdemir.webp", role: "Simülasyon ve Test", dept: "Elektrik-Elektronik Müh.", linkedin: "https://www.linkedin.com/in/eren-%C3%B6zdemir-00b515297/", cv: "/cv/eren-ozdemir.pdf" },
+  { name: "Hasan Arda Yaman", photo: "/team/hasan-arda-yaman.webp", role: "Güç Sistemleri", dept: "Elektrik-Elektronik Müh.", linkedin: "https://www.linkedin.com/" },
+  { name: "Hasan Emre Kaya", photo: "/team/hasan-emre-kaya.webp", role: "Mekanik Tasarım", dept: "Makine Mühendisliği", linkedin: "https://www.linkedin.com/in/hasanemrekaya/", cv: "/cv/hasan-emre-kaya.pdf" },
+  { name: "Oğuzhan Önder", photo: "/team/oguzhan-onder.webp", role: "Arayüz ve Yazılım", dept: "Yapay Zeka ve Makine Öğrenmesi", linkedin: "https://www.linkedin.com/in/o%C4%9Fuzhan%C3%B6nderr/", cv: "/cv/oguzhan-onder.pdf" },
 ]
 
 export const REFERENCES = [
