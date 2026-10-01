@@ -57,7 +57,6 @@ export const HARDWARE = [
   { group: "Eyleyici", name: "NEMA 23 + TB6600", spec: "2,0 Nm baz tork · mikroadım sürüş" },
   { group: "Aktarım", name: "3:1 triger kayış", spec: "6,0 Nm efektif tork · 1° motor → 0,33° anten" },
   { group: "RF", name: "40 cm parabolik anten", spec: "S-band 2 GHz · 3GPP Rel-17/18 NTN" },
-  { group: "Döner", name: "12 kanal slip ring", spec: "Azimutta 0–360° kesintisiz dönüş" },
   { group: "Doğrulama", name: "5 mW lazer", spec: "Boresight ekseninde · hedef çembere nokta atışı" },
 ]
 

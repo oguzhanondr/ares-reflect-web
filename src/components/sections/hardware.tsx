@@ -38,7 +38,7 @@ export function Hardware() {
 
         <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
           {HARDWARE.map((h, i) => (
-            <Reveal key={h.name} delay={i * 0.03} className={i === HARDWARE.length - 1 ? "sm:col-span-2" : undefined}>
+            <Reveal key={h.name} delay={i * 0.03} className={HARDWARE.length % 2 === 1 && i === HARDWARE.length - 1 ? "sm:col-span-2" : undefined}>
               <DataCell label={h.group} value={h.name} note={h.spec} className="h-full" />
             </Reveal>
           ))}
